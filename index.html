@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="pt-BR">
 <head>
@@ -6,14 +5,116 @@
 <meta name="theme-color" content="#120d19"><meta name="description" content="Biblioteca de texturas Minecraft Bedrock apresentadas por RhitRzBR.">
 <title>Texturas utilizadas por RhitRzBR</title>
 <style>
-:root{--bg:#0b0910;--panel:#15101d;--panel2:#1d1528;--purple:#8b35d7;--violet:#bc79ff;--pink:#f08bcf;--text:#f5efff;--muted:#b9abc8;--line:#33253e}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#251239 0,#0b0910 48%);color:var(--text);font:16px system-ui,-apple-system,Segoe UI,Roboto,sans-serif}a{color:inherit}.wrap{max-width:1100px;margin:auto;padding:18px}.hero{border:1px solid var(--line);border-radius:22px;overflow:hidden;background:linear-gradient(130deg,#21132f,#100d17 60%,#2b1235);padding:24px 18px;position:relative}.hero:after{content:"";position:absolute;width:170px;height:170px;right:-40px;top:-40px;border-radius:50%;background:radial-gradient(circle,#a64ff044,transparent 70%)}.brand{font-size:12px;letter-spacing:.18em;color:var(--pink);font-weight:800}.hero h1{font-size:clamp(26px,7vw,46px);line-height:1.08;margin:10px 0}.hero h1 span{color:var(--violet)}.hero p{color:var(--muted);max-width:620px;line-height:1.5;margin-bottom:18px}.tagline{display:inline-block;border:1px solid #73469b;border-radius:999px;padding:7px 11px;color:#e3c7ff;font-size:12px}.nav{display:flex;gap:9px;flex-wrap:wrap;margin:18px 0}.nav a{text-decoration:none;border:1px solid var(--line);background:#17111f;border-radius:12px;padding:9px 12px;font-size:13px;color:#e5d8f5}.nav a:hover{border-color:var(--violet)}.section-title{margin:24px 0 12px;font-size:20px}.filters{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:13px;display:grid;gap:10px}.search{width:100%;border:1px solid var(--line);border-radius:12px;background:#0e0b14;color:var(--text);padding:13px;font-size:16px;outline:none}.search:focus{border-color:var(--violet)}.filterrow{display:flex;gap:8px;flex-wrap:wrap}.chip{border:1px solid #473454;border-radius:999px;background:#20172b;color:#d8c6eb;padding:8px 12px;font-size:13px;cursor:pointer}.chip.active{background:linear-gradient(135deg,#7130b3,#a24bd3);border-color:#bc79ff;color:#fff}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:13px}.card{border:1px solid var(--line);background:var(--panel);border-radius:16px;overflow:hidden}.preview{height:145px;display:grid;place-items:center;background:linear-gradient(135deg,#20102d,#44205d,#17101f);position:relative}.preview:before{content:"";width:90px;height:90px;opacity:.65;background:repeating-linear-gradient(45deg,#a35bda 0 12px,#52277a 12px 24px);clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%)}.preview.pink{background:linear-gradient(135deg,#281323,#7a305e,#1a101d)}.preview.pink:before{background:repeating-linear-gradient(45deg,#e78ac8 0 12px,#74395f 12px 24px)}.preview.dark{background:linear-gradient(135deg,#101019,#34264c,#100d16)}.preview.dark:before{background:repeating-linear-gradient(45deg,#9370b7 0 12px,#322341 12px 24px)}.cardbody{padding:13px}.card h3{margin:0 0 8px;font-size:17px}.meta{display:flex;gap:6px;flex-wrap:wrap}.meta span{font-size:11px;border:1px solid #493557;border-radius:7px;padding:4px 7px;color:#d8c4ec}.card p{color:var(--muted);font-size:13px;line-height:1.45}.download{display:block;text-align:center;text-decoration:none;padding:10px;border-radius:10px;background:#39234c;color:#d9b8ff;font-weight:700;font-size:13px;margin-top:12px;opacity:.65;pointer-events:none}.empty{display:none;color:var(--muted);padding:24px;text-align:center;border:1px dashed var(--line);border-radius:14px}.footer{margin:30px 0 10px;text-align:center;color:var(--muted);font-size:12px}.footer b{color:var(--pink)}@media(min-width:700px){.hero{padding:36px}.wrap{padding:28px}}
+:root{--bg:#0b0910;--panel:#15101d;--panel2:#1d1528;--purple:#8b35d7;--violet:#bc79ff;--pink:#f08bcf;--text:#f5efff;--muted:#b9abc8;--line:#33253e}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#251239 0,#0b0910 48%);color:var(--text);font:16px system-ui,-apple-system,Segoe UI,Roboto,sans-serif}a{color:inherit}
+
+/* Banner no Topo com Efeito de Rolagem */
+.banner-container{position:relative;width:100%;height:220px;overflow:hidden;border-bottom:1px solid var(--line)}
+.banner-img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;transform:scale(1.02);transition:transform 0.3s ease}
+
+.wrap{max-width:1100px;margin:auto;padding:18px;position:relative;z-index:2}
+.hero{border:1px solid var(--line);border-radius:22px;overflow:hidden;background:linear-gradient(130deg,rgba(33,19,47,0.95),rgba(16,13,23,0.95) 60%,rgba(43,18,53,0.95));padding:24px 18px;position:relative;margin-top:-40px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 10px 30px rgba(0,0,0,0.5)}
+.hero:after{content:"";position:absolute;width:170px;height:170px;right:-40px;top:-40px;border-radius:50%;background:radial-gradient(circle,#a64ff044,transparent 70%)}
+.brand{font-size:12px;letter-spacing:.18em;color:var(--pink);font-weight:800}
+.hero h1{font-size:clamp(26px,7vw,46px);line-height:1.08;margin:10px 0}
+.hero h1 span{color:var(--violet)}
+.hero p{color:var(--muted);max-width:620px;line-height:1.5;margin-bottom:18px}
+.tagline{display:inline-block;border:1px solid #73469b;border-radius:999px;padding:7px 11px;color:#e3c7ff;font-size:12px}
+.nav{display:flex;gap:9px;flex-wrap:wrap;margin:18px 0}
+.nav a{text-decoration:none;border:1px solid var(--line);background:#17111f;border-radius:12px;padding:9px 12px;font-size:13px;color:#e5d8f5}
+.nav a:hover{border-color:var(--violet)}
+.section-title{margin:24px 0 12px;font-size:20px}
+.filters{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:13px;display:grid;gap:10px}
+.search{width:100%;border:1px solid var(--line);border-radius:12px;background:#0e0b14;color:var(--text);padding:13px;font-size:16px;outline:none}
+.search:focus{border-color:var(--violet)}
+
+/* Estilo das Gavetinhas (Dropdowns de Filtro) */
+.dropdown-row{display:flex;gap:10px;flex-wrap:wrap}
+.dropdown{position:relative;flex:1;min-width:140px}
+.drop-btn{width:100%;display:flex;justify-content:space-between;align-items:center;border:1px solid #473454;border-radius:12px;background:#20172b;color:#d8c6eb;padding:10px 14px;font-size:13px;cursor:pointer}
+.drop-btn:hover{border-color:var(--violet)}
+.drop-content{display:none;position:absolute;top:calc(100% + 6px);left:0;width:100%;background:#17111f;border:1px solid var(--line);border-radius:12px;overflow:hidden;z-index:99;box-shadow:0 8px 20px rgba(0,0,0,0.5)}
+.drop-content.show{display:block}
+.drop-item{padding:10px 14px;font-size:13px;color:#d8c6eb;cursor:pointer;border-bottom:1px solid rgba(51,37,62,0.4)}
+.drop-item:last-child{border-bottom:none}
+.drop-item:hover,.drop-item.active{background:#2a1b38;color:#fff}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:13px}
+.card{border:1px solid var(--line);background:var(--panel);border-radius:16px;overflow:hidden}
+.preview{height:145px;display:grid;place-items:center;background:linear-gradient(135deg,#20102d,#44205d,#17101f);position:relative}
+.preview:before{content:"";width:90px;height:90px;opacity:.65;background:repeating-linear-gradient(45deg,#a35bda 0 12px,#52277a 12px 24px);clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%)}
+.preview.pink{background:linear-gradient(135deg,#281323,#7a305e,#1a101d)}
+.preview.pink:before{background:repeating-linear-gradient(45deg,#e78ac8 0 12px,#74395f 12px 24px)}
+.preview.dark{background:linear-gradient(135deg,#101019,#34264c,#100d16)}
+.preview.dark:before{background:repeating-linear-gradient(45deg,#9370b7 0 12px,#322341 12px 24px)}
+.cardbody{padding:13px}
+.card h3{margin:0 0 8px;font-size:17px}
+.meta{display:flex;gap:6px;flex-wrap:wrap}
+.meta span{font-size:11px;border:1px solid #493557;border-radius:7px;padding:4px 7px;color:#d8c4ec}
+.card p{color:var(--muted);font-size:13px;line-height:1.45}
+.download{display:block;text-align:center;text-decoration:none;padding:10px;border-radius:10px;background:#39234c;color:#d9b8ff;font-weight:700;font-size:13px;margin-top:12px;opacity:.65;pointer-events:none}
+.empty{display:none;color:var(--muted);padding:24px;text-align:center;border:1px dashed var(--line);border-radius:14px}
+
+/* Paginação (Estilo de abas numéricas no rodapé) */
+.pagination-container{display:flex;flex-direction:column;align-items:center;gap:8px;margin-top:25px}
+.pagination{display:flex;gap:6px;align-items:center;flex-wrap:wrap;justify-content:center}
+.page-btn{border:1px solid #473454;background:#20172b;color:#d8c6eb;padding:8:px 12px;min-width:36px;height:36px;display:grid;place-items:center;border-radius:10px;font-size:13px;cursor:pointer;text-decoration:none}
+.page-btn.active{background:linear-gradient(135deg,#7130b3,#a24bd3);border-color:#bc79ff;color:#fff;font-weight:700}
+.page-btn:disabled{opacity:0.4;cursor:not-allowed}
+.page-info{color:var(--muted);font-size:12px}
+
+.footer{margin:30px 0 10px;text-align:center;color:var(--muted);font-size:12px}
+.footer b{color:var(--pink)}
+@media(min-width:700px){.hero{padding:36px}.wrap{padding:28px}.banner-container{height:280px}}
 </style>
-</head><body><main class="wrap">
+</head>
+<body>
+
+<!-- Banner do Topo -->
+<div class="banner-container">
+  <img src="Banner.jpg" alt="RhitRzBR Banner" class="banner-img">
+</div>
+
+<main class="wrap">
 <section class="hero"><div class="brand">RHITRZBR • MINECRAFT BEDROCK</div><h1>Texturas utilizadas<br><span>por RhitRzBR</span></h1><p>Encontre texturas, packs PvP, shaders e opções para melhorar sua experiência no Minecraft Bedrock. Uma biblioteca em constante expansão.</p><span class="tagline">Biblioteca comunitária • Downloads gratuitos</span></section>
 <nav class="nav"><a href="#catalogo">Catálogo</a><a href="#categorias">Categorias</a><a href="#sobre">Sobre</a></nav>
-<section id="catalogo"><h2 class="section-title">Encontre sua textura</h2><div class="filters"><input id="search" class="search" type="search" placeholder="Buscar pelo nome da textura..." aria-label="Buscar texturas"><div class="filterrow" id="categories"><button class="chip active" data-cat="all">Todas</button><button class="chip" data-cat="PvP">PvP</button><button class="chip" data-cat="Shaders">Shaders</button><button class="chip" data-cat="FPS">FPS</button><button class="chip" data-cat="Realista">Realistas</button><button class="chip" data-cat="Clássica">Clássicas</button></div><div class="filterrow" id="resolutions"><button class="chip active" data-res="all">Todas resoluções</button><button class="chip" data-res="16x">16x</button><button class="chip" data-res="32x">32x</button><button class="chip" data-res="64x">64x</button><button class="chip" data-res="128x">128x</button><button class="chip" data-res="256x">256x</button><button class="chip" data-res="512x">512x</button></div></div>
-<div class="grid" id="grid">
 
+<section id="catalogo">
+<h2 class="section-title">Encontre sua textura</h2>
+<div class="filters">
+  <input id="search" class="search" type="search" placeholder="Buscar pelo nome da textura..." aria-label="Buscar texturas">
+  
+  <!-- Gavetinhas de Filtro (Tipo e Resolução) -->
+  <div class="dropdown-row">
+    <!-- Gavetinha de Tipo -->
+    <div class="dropdown" id="typeDropdown">
+      <button class="drop-btn" id="typeBtn"><span>Type: Todas</span> ▾</button>
+      <div class="drop-content" id="typeContent">
+        <div class="drop-item active" data-cat="all">Todas</div>
+        <div class="drop-item" data-cat="PvP">PvP</div>
+        <div class="drop-item" data-cat="Shaders">Shaders</div>
+        <div class="drop-item" data-cat="FPS">FPS</div>
+        <div class="drop-item" data-cat="Realista">Realistas</div>
+        <div class="drop-item" data-cat="Clássica">Clássicas</div>
+      </div>
+    </div>
+
+    <!-- Gavetinha de Resolução -->
+    <div class="dropdown" id="resDropdown">
+      <button class="drop-btn" id="resBtn"><span>Res: Todas</span> ▾</button>
+      <div class="drop-content" id="resContent">
+        <div class="drop-item active" data-res="all">Todas resoluções</div>
+        <div class="drop-item" data-res="16x">16x</div>
+        <div class="drop-item" data-res="32x">32x</div>
+        <div class="drop-item" data-res="64x">64x</div>
+        <div class="drop-item" data-res="128x">128x</div>
+        <div class="drop-item" data-res="256x">256x</div>
+        <div class="drop-item" data-res="512x">512x</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="grid" id="grid">
 <article class="card" data-cat="PvP" data-res="16x" data-name="absolute 16x">
 <div class="preview absolute-preview" style="background-image:url('https://raw.githubusercontent.com/RhitRzBR/Texturas-RhitRzBR/main/1795229269417.jpg');background-size:cover;background-position:center"></div>
 <div class="cardbody">
@@ -25,8 +126,93 @@
 
 <article class="card" data-cat="Shaders" data-res="64x" data-name="exemplo shader 64x"><div class="preview pink"></div><div class="cardbody"><h3>Exemplo de shader</h3><div class="meta"><span>Shaders</span><span>64x</span><span>Bedrock</span></div><p>Cartão demonstrativo para packs visuais. Arquivo ainda não publicado.</p><a class="download" href="#">Download em breve</a></div></article>
 <article class="card" data-cat="FPS" data-res="32x" data-name="exemplo fps 32x"><div class="preview dark"></div><div class="cardbody"><h3>Exemplo FPS</h3><div class="meta"><span>FPS</span><span>32x</span><span>Bedrock</span></div><p>Cartão demonstrativo para packs focados em desempenho. Arquivo ainda não publicado.</p><a class="download" href="#">Download em breve</a></div></article>
-</div><div class="empty" id="empty">Nenhuma textura encontrada. Tente outra busca ou filtro.</div></section>
-<section id="categorias"><h2 class="section-title">Categorias</h2><p style="color:var(--muted);line-height:1.6">PvP • Shaders • FPS • Realistas • Clássicas • Outras</p></section><section id="sobre"><h2 class="section-title">Sobre a biblioteca</h2><p style="color:var(--muted);line-height:1.6">Projeto independente de RhitRzBR para reunir em um só lugar packs apresentados no canal. Os créditos e links dos criadores serão informados em cada publicação, conforme as permissões de distribuição.</p></section><footer class="footer">Feito para Minecraft Bedrock • <b>RhitRzBR</b></footer></main>
+</div>
+
+<div class="empty" id="empty">Nenhuma textura encontrada. Tente outra busca ou filtro.</div>
+
+<!-- Paginação Pronta (10 itens por página) -->
+<div class="pagination-container" id="paginationContainer">
+  <div class="pagination" id="pagination"></div>
+  <div class="page-info" id="pageInfo"></div>
+</div>
+</section>
+
+<section id="categorias"><h2 class="section-title">Categorias</h2><p style="color:var(--muted);line-height:1.6">PvP • Shaders • FPS • Realistas • Clássicas • Outras</p></section>
+<section id="sobre"><h2 class="section-title">Sobre a biblioteca</h2><p style="color:var(--muted);line-height:1.6">Projeto independente de RhitRzBR para reunir em um só lugar packs apresentados no canal. Os créditos e links dos criadores serão informados em cada publicação, conforme as permissões de distribuição.</p></section>
+<footer class="footer">Feito para Minecraft Bedrock • <b>RhitRzBR</b></footer></main>
+
 <script>
-const cards=[...document.querySelectorAll('.card')],search=document.getElementById('search'),catBtns=[...document.querySelectorAll('#categories .chip')],resBtns=[...document.querySelectorAll('#resolutions .chip')],empty=document.getElementById('empty');let cat='all',res='all';function update(){let q=search.value.trim().toLowerCase(),shown=0;cards.forEach(c=>{let ok=(cat==='all'||c.dataset.cat===cat)&&(res==='all'||c.dataset.res===res)&&c.dataset.name.includes(q);c.style.display=ok?'':'none';if(ok)shown++});empty.style.display=shown?'none':'block'}catBtns.forEach(b=>b.onclick=()=>{cat=b.dataset.cat;catBtns.forEach(x=>x.classList.toggle('active',x===b));update()});resBtns.forEach(b=>b.onclick=()=>{res=b.dataset.res;resBtns.forEach(x=>x.classList.toggle('active',x===b));update()});search.addEventListener('input',update);
-</script></body></html>
+const cards=[...document.querySelectorAll('.card')],search=document.getElementById('search'),empty=document.getElementById('empty');
+let cat='all',res='all',currentPage=1,itemsPerPage=10;
+
+// Controle das Gavetinhas (Dropdowns)
+const typeBtn=document.getElementById('typeBtn'),typeContent=document.getElementById('typeContent'),typeItems=document.querySelectorAll('#typeContent .drop-item');
+const resBtn=document.getElementById('resBtn'),resContent=document.getElementById('resContent'),resItems=document.querySelectorAll('#resContent .drop-item');
+
+typeBtn.onclick=(e)=>{e.stopPropagation();typeContent.classList.toggle('show');resContent.classList.remove('show')};
+resBtn.onclick=(e)=>{e.stopPropagation();resContent.classList.toggle('show');typeContent.classList.remove('show')};
+window.onclick=()=>{typeContent.classList.remove('show');resContent.classList.remove('show')};
+
+typeItems.forEach(item=>{item.onclick=()=>{cat=item.dataset.cat;typeBtn.querySelector('span').textContent='Type: '+item.textContent;typeItems.forEach(i=>i.classList.remove('active'));item.classList.add('active');currentPage=1;update()}});
+resItems.forEach(item=>{item.onclick=()=>{res=item.dataset.res;resBtn.querySelector('span').textContent='Res: '+item.textContent;resItems.forEach(i=>i.classList.remove('active'));item.classList.add('active');currentPage=1;update()}});
+
+// Sistema de Filtro e Paginação (10 por página)
+function update(){
+  let q=search.value.trim().toLowerCase();
+  let filtered=cards.filter(c=>{
+    let okCat=(cat==='all'||c.dataset.cat===cat);
+    let okRes=(res==='all'||c.dataset.res===res);
+    let okName=c.dataset.name.includes(q);
+    return okCat && okRes && okName;
+  });
+
+  let totalPages=Math.ceil(filtered.length/itemsPerPage) || 1;
+  if(currentPage>totalPages)currentPage=totalPages;
+
+  cards.forEach(c=>c.style.display='none');
+  let start=(currentPage-1)*itemsPerPage;
+  let end=start+itemsPerPage;
+  let visibleCards=filtered.slice(start,end);
+  visibleCards.forEach(c=>c.style.display='');
+
+  empty.style.display=filtered.length?'none':'block';
+
+  // Renderizar paginação
+  let paginationEl=document.getElementById('pagination');
+  let pageInfoEl=document.getElementById('pageInfo');
+  paginationEl.innerHTML='';
+
+  if(totalPages>1){
+    let prevBtn=document.createElement('button');
+    prevBtn.className='page-btn';
+    prevBtn.textContent='<';
+    prevBtn.disabled=currentPage===1;
+    prevBtn.onclick=()=>{if(currentPage>1){currentPage--;update()}};
+    paginationEl.appendChild(prevBtn);
+
+    for(let i=1;i<=totalPages;i++){
+      let pBtn=document.createElement('button');
+      pBtn.className='page-btn'+(i===currentPage?' active':'');
+      pBtn.textContent=i;
+      pBtn.onclick=()=>{currentPage=i;update()};
+      paginationEl.appendChild(pBtn);
+    }
+
+    let nextBtn=document.createElement('button');
+    nextBtn.className='page-btn';
+    nextBtn.textContent='>';
+    nextBtn.disabled=currentPage===totalPages;
+    nextBtn.onclick=()=>{if(currentPage<totalPages){currentPage++;update()}};
+    paginationEl.appendChild(nextBtn);
+
+    pageInfoEl.textContent=`Página ${currentPage} de ${totalPages} (${filtered.length} total)`;
+    document.getElementById('paginationContainer').style.display='flex';
+  } else {
+    document.getElementById('paginationContainer').style.display=filtered.length>0?'none':'none';
+  }
+}
+
+search.addEventListener('input',()=>{currentPage=1;update()});
+update();
+</script></body>
+</html>
